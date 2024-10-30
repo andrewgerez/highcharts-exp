@@ -52,8 +52,8 @@ function TotalAccessPerMonth() {
   return (
     <Wrapper>
       <CustomChartTitle
-        description="Monitor the average amount of access per month and day on the platforms"
-        title="Average total page access per month"
+        description='Monitor the average amount of access per month and day on the platforms'
+        title='Total page access per month'
       />
       <Chart options={options} />
     </Wrapper>
