@@ -11,8 +11,8 @@ export type AnalyticsData = {
     all: number
   }
   totalAccessOnPagesByHour: {
-    ignite: number[]
-    expertsClub: number[]
+    default: number[]
+    premium: number[]
   }
   totalAccessOnPagesByMonth: {
     months: Array<number[]>
