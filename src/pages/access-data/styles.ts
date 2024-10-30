@@ -10,7 +10,7 @@ export const Content = styled.section`
     column-gap: 40px;
 
     grid-template:
-        "totalAccessOnPages porcentageOfAccessOnPages" minmax(auto, auto)
+        "totalAccessOnPages percentageOfAccessOnPages" minmax(auto, auto)
         "totalAccessPerHour totalAccessPerHour" minmax(auto, auto)
         "totalAccessPerMonth totalAccessPerMonth" minmax(auto, auto)
         "wordcloud wordcloud" minmax(auto, auto)
@@ -18,7 +18,7 @@ export const Content = styled.section`
 
     @media ${device.lg} {
         grid-template:
-            "totalAccessOnPages porcentageOfAccessOnPages" minmax(auto, auto)
+            "totalAccessOnPages percentageOfAccessOnPages" minmax(auto, auto)
             "totalAccessPerHour totalAccessPerHour" minmax(auto, auto)
             "totalAccessPerMonth totalAccessPerMonth" minmax(auto, auto)
             "wordcloud wordcloud" minmax(auto, auto)
@@ -28,7 +28,7 @@ export const Content = styled.section`
     @media ${device.md} {
         grid-template:
             "totalAccessOnPages" minmax(auto, auto)
-            "porcentageOfAccessOnPages" minmax(auto, auto)
+            "percentageOfAccessOnPages" minmax(auto, auto)
             "totalAccessPerHour" minmax(auto, auto)
             "totalAccessPerMonth" minmax(auto, auto)
             "wordcloud" minmax(auto, auto)
