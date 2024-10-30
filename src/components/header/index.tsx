@@ -28,7 +28,7 @@ function Header() {
       <Main>
         <h5>Analytics</h5>
         <span>
-          Monitor the number of hits generated on the pages of your website
+          Monitor the number of access generated on the pages of your website
         </span>
 
         <Content>
