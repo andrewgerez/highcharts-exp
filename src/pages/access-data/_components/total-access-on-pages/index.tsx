@@ -1,8 +1,8 @@
 import Chart from '@/components/chart'
+import useAnalyticsData from '@/shared/hooks/use-analytics-data'
 import { Options } from 'highcharts'
 import { Wrapper } from './styles'
 import { AnalyticsColors } from '@/shared/constants/global'
-import useAnalyticsData from '@/shared/hooks/use-analytics-data'
 
 function TotalAccessOnPages() {
   const { analyticsDataState } = useAnalyticsData()
