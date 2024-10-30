@@ -1,6 +1,6 @@
 import Chart from '@/components/chart'
-import { TotalOfAccess, Wrapper } from './styles'
 import { Options } from 'highcharts'
+import { TotalOfAccess, Wrapper } from './styles'
 
 function PercentageOfAccessOnPages() {
   const options: Options = {}
