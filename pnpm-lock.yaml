@@ -16,7 +16,7 @@ dependencies:
     version: 11.4.8
   highcharts-exp:
     specifier: 'file:'
-    version: 'file:'
+    version: file:(vite@5.4.10)
   highcharts-react-official:
     specifier: ^3.2.1
     version: 3.2.1(highcharts@11.4.8)(react@18.3.1)
@@ -2351,10 +2351,12 @@ packages:
     engines: {node: '>=10'}
     dev: true
 
-  'file:':
+  file:(vite@5.4.10):
     resolution: {directory: '', type: directory}
+    id: 'file:'
     name: highcharts-exp
     dependencies:
+      '@vitejs/plugin-react': 4.3.3(vite@5.4.10)
       axios: 1.7.7
       highcharts: 11.4.8
       highcharts-react-official: 3.2.1(highcharts@11.4.8)(react@18.3.1)
@@ -2365,4 +2367,6 @@ packages:
       styled-components: 6.1.13(react-dom@18.3.1)(react@18.3.1)
     transitivePeerDependencies:
       - debug
+      - supports-color
+      - vite
     dev: false
