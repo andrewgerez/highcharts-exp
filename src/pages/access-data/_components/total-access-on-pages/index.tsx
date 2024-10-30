@@ -2,7 +2,6 @@ import Chart from '@/components/chart'
 import { Options } from 'highcharts'
 import { Wrapper } from './styles'
 import { AnalyticsColors } from '@/shared/constants/global'
-import { Eye } from 'lucide-react'
 import useAnalyticsData from '@/shared/hooks/use-analytics-data'
 
 function TotalAccessOnPages() {
@@ -10,31 +9,31 @@ function TotalAccessOnPages() {
 
   const options: Options = {
     title: {
-      text: 'Total de acessos nas páginas',
+      text: 'Total access on pages',
       useHTML: true,
-      align: "left",
+      align: 'left',
       style: {
-        padding: "30px",
-        fontSize: "20px",
+        padding: '30px',
+        fontSize: '20px',
         color: AnalyticsColors.black,
-        fontWeight: "bold",
-        fontStyle: "Normal",
-        fontFamily: "Inter",
+        fontWeight: 'bold',
+        fontStyle: 'Normal',
+        fontFamily: 'Inter',
       },
     },
     chart: {
-      type: "column",
+      type: 'column',
     },
     series: [
       {
-        name: "Platform",
-        type: "column",
+        name: 'Platform',
+        type: 'column',
         data: [analyticsDataState?.totalAccessOnPages?.platform?.value],
         color: AnalyticsColors.purple,
       },
       {
-        name: "Alternative Platform",
-        type: "column",
+        name: 'Alternative Platform',
+        type: 'column',
         data: [
           analyticsDataState?.totalAccessOnPages?.alternativePlatform?.value,
         ],
@@ -47,7 +46,7 @@ function TotalAccessOnPages() {
     yAxis: {
       min: 0,
       title: {
-        text: "",
+        text: '',
       },
     },
     plotOptions: {
@@ -57,17 +56,17 @@ function TotalAccessOnPages() {
           enabled: true,
           color: AnalyticsColors.black,
           inside: true,
-          verticalAlign: "bottom",
+          verticalAlign: 'bottom',
           borderWidth: 3,
           shadow: false,
           style: {
-            fontSize: "36px",
-            fontWeight: "bold",
-            fontStyle: "Normal",
-            lineHeight: "44px",
-            fontFamily: "Inter",
-            textOutline: "0",
-            padding: "14px",
+            fontSize: '36px',
+            fontWeight: 'bold',
+            fontStyle: 'Normal',
+            lineHeight: '44px',
+            fontFamily: 'Inter',
+            textOutline: '0',
+            padding: '14px',
           },
         },
       },
