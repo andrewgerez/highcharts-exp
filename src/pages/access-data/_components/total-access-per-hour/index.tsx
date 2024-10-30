@@ -56,7 +56,7 @@ function TotalAccessPerHour() {
   return (
     <Wrapper>
       <CustomChartTitle
-        description='Track the amount of access per hour on the platforms pages'
+        description='Monitor the average amount of access per hour on the platforms pages'
         title='Total page access per hour'
       />
       <Chart options={options} />
