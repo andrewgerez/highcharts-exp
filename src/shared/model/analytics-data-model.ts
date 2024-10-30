@@ -1,18 +1,18 @@
 export type AnalyticsData = {
   totalAccessOnPages: {
-    default: {
+    platform: {
       porcentage: number
       value: number
     }
-    premium: {
+    alternativePlatform: {
       porcentage: number
       value: number
     }
     all: number
   }
   totalAccessOnPagesByHour: {
-    default: number[]
-    premium: number[]
+    platform: number[]
+    alternativePlatform: number[]
   }
   totalAccessOnPagesByMonth: {
     months: Array<number[]>
