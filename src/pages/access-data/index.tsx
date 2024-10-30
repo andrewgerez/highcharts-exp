@@ -8,7 +8,7 @@ function AccessData() {
       <Header />
 
       <Content>
-
+        
       </Content>
     </AnalyticsDataProvider>
   )
